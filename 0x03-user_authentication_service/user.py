@@ -1,7 +1,13 @@
+#!/usr/bin/env python3
+"""This is the user module with the primary
+database script
+"""
+
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
+
 
 class User(Base):
     __tablename__ = 'users'
